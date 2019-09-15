@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Kachelmann Unblocker",
+  "version": "0.9",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.kachelmannwetter.com/*",
+        "*://*.weather.us/*",
+        "*://*.meteologix.com/*"
+      ],
+      "js": [
+        "kachelmann.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
